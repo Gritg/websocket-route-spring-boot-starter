@@ -32,9 +32,25 @@ import java.util.List;
 @ConfigurationProperties(prefix = WebsocketRouteProperties.WEBSOCKET_ROUTE_PREFIX)
 public class WebsocketRouteProperties {
     public static final String WEBSOCKET_ROUTE_PREFIX = "websocket.route";
+    /**
+     * ServerUrl
+     * 服务Url
+     */
     private String url;
+    /**
+     * MaxFramePayloadLength
+     * 最大帧载荷长度
+     */
     private int maxFramePayloadLength = 65536;
+    /**
+     * ReadTimeoutMilli
+     * 读取超时
+     */
     private int readTimeoutMilli = 16000;
+    /**
+     * Relays
+     * 转发集合
+     */
     private List<Relay> relays;
 
 }

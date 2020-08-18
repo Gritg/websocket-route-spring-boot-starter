@@ -27,6 +27,14 @@ import lombok.Data;
  */
 @Data
 public class Relay {
+    /**
+     * matchPathPrefix
+     * 匹配路径前缀
+     */
     private String matchPathPrefix;
+    /**
+     * relayBeanName
+     * 转发be9an名称
+     */
     private String relayBeanName;
 }
