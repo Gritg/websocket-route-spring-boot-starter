@@ -45,14 +45,12 @@ websocket.route.relays[0].relay-bean-name=userRelay
 
 # Getting Started WebsocketRoute
 ```java
-```java
 @Component
 public class UserRoute implements WebsocketRelayTemplate {
     public static List<String> websocketServerUrl=new ArrayList<> ();
     static {
         /**
          * You Can Use The RPC Tool To Obtain The Cluster URL Address Periodically
-         *
          * For Example, Use HTTP To Request URL Storage Server (HttpServer+redis)
          */
         websocketServerUrl.add ("127.0.0.1:8080");
@@ -76,12 +74,12 @@ public class UserRoute implements WebsocketRelayTemplate {
          * There Are Many Things That Can Be Done Here
          * Example 1.
          * Team up to join the same server
-         * The Team Leader Requests From The URL Server And Gets The URL (The Request Here Can Use A Variety Of Protocols, such as HTTP + Redis)
+         * The Team Leader Requests From The URL Server And Gets The URL (The Request Here Can Use A Variety Of Protocols, Such As HTTP + Redis)
          * The Team Leader Assigns The URL To His Teammates.
          * Each Person's Request Header carries The URL And Connects To The Same Server
          * Example 2.
          * Join Friends Server
-         * Request Ro Store The URL Of A Friend's Connected Server,(The Request Here Can Use A Variety Of Protocols, such as HTTP + Redis)
+         * Request Ro Store The URL Of A Friend's Connected Server,(The Request Here Can Use A Variety Of Protocols, Such As HTTP + Redis)
          * The Request Header Carries The URL And Connects To The Same Server
          *
          */
